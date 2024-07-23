@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalice.css">
+</head>
+
+
+<body class="diagonal-gradient">
+
+    <header>
+        <div class="nav-bg">
+            <h3 class="titulo centrar"> SMART CURTAINS </h3>
+        </div>
+
+        <div>
+            <img class="log" src="../cortinas/img/OIG1.9jfz0qr.jpeg">
+        </div>
+    </header>
+
+    <div class="content">
+
+        <main class="contenedor sombra">
+            
+            <h2 class="subtitulo"> Eslogan: </h2>
+            <p class="texto centrar"> Luz en tu habitación </p>
+
+            <div class="botones centrar">
+                <h1 class="subtitulo"> </h1>
+    
+                <div class="centrar">
+                    <button onclick="changeContent('content1')">Mision</button>
+                    <button onclick="changeContent('content2')">Valores</button>
+                    <button onclick="changeContent('content3')">Politicas</button>
+                </div>
+            </div>
+            
+
+            <div id="content" class="content">
+                <!-- Contenido inicial -->
+                <p class="texto"> </p>
+            </div>
+
+            <div class="centrar">
+                <h2 class="subtitulo"> producto </h2>
+                <img class="imagen" src="img/51szrmzE3PL._AC_UF894,1000_QL80_.jpg">
+                <p class="texto"> Smart Curtains es un proyecto de desarrollo de un cortinero inteligente, capaz de abrir o cerrar las cortinas mediante un botón o en horas programadas por el usuario mediante una aplicación móvil.</p>
+            </div>
+
+            <div class="centrar"> 
+                <h2 class="subtitulo"> Organigrama </h2>
+                <img class="imagen" src="img/organigrama.png">
+            </div>
+
+        </main>
+
+    </div>
+
+    
+
+
+
+    <script>
+        function changeContent(contentId) {
+            const content = document.getElementById('content');
+            
+            if (contentId === 'content1') {
+                content.innerHTML = '<h2 class="subtitulo"> Mision: </h2> <p class="texto"> Nuestra misión es proporcionar productos tecnológicos innovadores, accesibles y de alta calidad para los amantes de los gadgets y la tecnología, al mismo tiempo que nos comprometemos a ser respetuosos con el medio ambiente y responsables con la sociedad. </p>';
+            } else if (contentId === 'content2') {
+                content.innerHTML = '<h2 class="subtitulo"> Valores de la Empresa </h2> <p class="texto"> 1.	Sostenibilidad Ambiental: Nos comprometemos a desarrollar productos y procesos que minimicen nuestro impacto ambiental. Nos esforzamos por utilizar materiales ecológicos y eficientes, promoviendo prácticas sostenibles que protejan y preserven nuestro planeta para futuras generaciones. </p> <p class="texto"> 2.	Responsabilidad Social: Valoramos nuestra relación con la comunidad y nos dedicamos a contribuir positivamente a la sociedad. Fomentamos prácticas empresariales éticas y transparentes, apoyando iniciativas que mejoren el bienestar social y fomenten la inclusión y la equidad. </p> <p class="texto"> 3.	Innovación Constante: Creemos en la importancia de la creatividad y la búsqueda continua de nuevas ideas y tecnologías. Nos comprometemos a liderar el mercado con soluciones innovadoras que no solo satisfagan las necesidades actuales de nuestros clientes, sino que también anticipen y superen sus expectativas futuras. </p>';
+            } else if (contentId === 'content3') {
+                content.innerHTML = '    <h2 class="subtitulo">Politicas</h2> <h2 class="subtitulo"> Políticas Generales de la Empresa </h2> <p class="texto"> 1.	Innovación Continua: Fomentar un entorno que promueva la creatividad y la innovación, alentando a todos los empleados a proponer nuevas ideas y mejoras tecnológicas. </p> <p class="texto"> 2.	Sostenibilidad Ambiental: Implementar prácticas y procesos que minimicen el impacto ambiental, asegurando que todos los productos y operaciones sean respetuosos con el medio ambiente. </p> <p class="texto"> 3.	Responsabilidad Social: Promover una cultura de responsabilidad social corporativa, contribuyendo positivamente a la comunidad y asegurando prácticas éticas y transparentes. </p> <p class="texto"> 4.	Calidad y Excelencia: Mantener un alto estándar de calidad en todos los productos y servicios ofrecidos, garantizando la satisfacción del cliente y la mejora continua.</p> <p class="texto"> 5.	Accesibilidad y Usabilidad: Diseñar productos que sean accesibles y fáciles de usar para todos los usuarios, asegurando que la tecnología sea inclusiva y útil para una amplia gama de personas.</p> <p class="texto"> 6.	Seguridad de la Información: Proteger la información y los datos de la empresa y de los clientes, asegurando su confidencialidad, integridad y disponibilidad mediante políticas de seguridad robustas.</p> <p class="texto"> 7.	Desarrollo Profesional: Apoyar el desarrollo y la capacitación continua de los empleados, proporcionando oportunidades de crecimiento personal y profesional.</p> <p class="texto"> 8.	Trabajo en Equipo y Colaboración: Fomentar un ambiente de trabajo colaborativo y de respeto mutuo, donde se valore la contribución de cada miembro del equipo.</p> <p class="texto"> 9.	Adaptabilidad y Flexibilidad: Ser ágiles y adaptativos ante los cambios del mercado y las necesidades de los clientes, buscando siempre la mejora y la adaptación continua.</p> <p class="texto"> 10.	Ética y Transparencia: Mantener altos estándares éticos en todas las operaciones y comunicaciones, promoviendo la transparencia y la honestidad en todas las interacciones.</p> <h2 class="subtitulo"> Políticas Específicas </h2> <h2 class="sb"> Direccion general </h2><p class="texto">  1.	Liderazgo y Visión Estratégica: Promover una visión estratégica clara y proporcionar un liderazgo sólido para guiar la empresa hacia sus objetivos a largo plazo.</p> <p class="texto">  2.	Toma de Decisiones Ética: Asegurar que todas las decisiones se tomen de manera ética y alineadas con los valores y objetivos de la empresa.</p> <p class="texto">  3.	Comunicación Efectiva: Mantener una comunicación abierta y efectiva con todos los departamentos y stakeholders, garantizando una gestión transparente y colaborativa.</p> <h2 class="sb"> Desarrollo Tecnológico </h2> <p class="texto">  1.	Innovación Tecnológica: Fomentar la investigación y el desarrollo continuo de nuevas tecnologías y mejoras en los productos actuales.</p> <p class="texto">  2.	Calidad del Código: Mantener altos estándares de calidad en el desarrollo de software, asegurando que el código sea eficiente, seguro y mantenible.</p> <p class="texto">  3.	Integración y Compatibilidad: Asegurar que todos los desarrollos sean compatibles con diferentes dispositivos y sistemas, facilitando la integración y la experiencia del usuario.</p> <h2 class="sb"> Calidad y Mejora Continua </h2> <p class="texto">  1.	Normas de Calidad: Implementar y mantener estándares de calidad estrictos en todos los procesos y productos.</p> <p class="texto">  2.	Evaluación y Mejora: Realizar evaluaciones regulares para identificar áreas de mejora y garantizar que se cumplan los estándares de calidad.</p> <p class="texto">  3.	Gestión de Incidentes: Desarrollar y mantener procedimientos para la gestión de problemas y defectos, asegurando una rápida resolución y prevención de futuros incidentes.</p> <h2 class="sb"> Diseño y Experiencia de Usuario </h2> <p class="texto">  1.	Diseño Centrado en el Usuario: Asegurar que todos los diseños estén centrados en las necesidades y expectativas de los usuarios, proporcionando una experiencia de usuario óptima.</p> <p class="texto">  2.	Accesibilidad y Usabilidad: Garantizar que todas las interfaces sean accesibles y fáciles de usar para una amplia gama de usuarios.    </p> <p class="texto">  3.	Actualización y Tendencias: Mantenerse al tanto de las últimas tendencias y mejores prácticas en diseño y experiencia de usuario para aplicarlas a los productos de la empresa. </p> <h2 class="sb"> Administrativo </h2> <p class="texto">  1.	Gestión Eficiente de Recursos: Asegurar una gestión eficiente de los recursos financieros y materiales de la empresa. </p> <p class="texto">  2.	Cumplimiento Legal y Normativo: Garantizar que todas las operaciones y transacciones de la empresa cumplan con las leyes y regulaciones aplicables. </p> <p class="texto">  3.	Transparencia y Ética: Promover la transparencia y la ética en todas las operaciones administrativas, asegurando una gestión responsable y honesta. </p>';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo de Pantalla Estático</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('../cortinas/img/OIG1.9jfz0qr.jpeg'); /* Cambia esto a la ruta de tu imagen */
+            background-attachment: fixed; /* Esto hace que el fondo sea estático */
+            background-repeat: no-repeat;
+            background-position: top left; /* Cambia la posición de la imagen */
+        }
+
+        .background-container {
+            position: fixed;
+            top: 20%; /* Cambia esto para ajustar la altura de la imagen */
+            left: 0;
+            width: 100%;
+            height: 60%; /* Cambia esto para ajustar la altura de la imagen */
+            background-image: inherit;
+            background-size: 100% 100%; /* Cambia esto para ajustar el tamaño de la imagen */
+        }
+
+        .content {
+            height: 200vh; /* Esto es solo para demostrar el desplazamiento */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="content">
+        Desplázate para ver el efecto del fondo fijo
+    </div>
+</body>
+</html>
